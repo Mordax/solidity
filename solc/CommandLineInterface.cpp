@@ -497,7 +497,7 @@ bool CommandLineInterface::parseLibraryOption(string const& _input)
 			}
 			if (!passesAddressChecksum(addrString, false))
 			{
-				cerr << "Invalid checksum on adress for library \"" << libName << "\": " << addrString << endl;
+				cerr << "Invalid checksum on address for library \"" << libName << "\": " << addrString << endl;
 				cerr << "The correct checksum is " << dev::getChecksummedAddress(addrString) << endl;
 				return false;
 			}
